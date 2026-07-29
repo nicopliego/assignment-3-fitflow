@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FitFlow
 
-## Getting Started
+## Descripción
 
-First, run the development server:
+FitFlow es una aplicación web educativa que permite crear un plan fitness básico y personalizado. La aplicación permite:
+
+- Generar una rutina según el objetivo, nivel, intensidad y días disponibles.
+- Obtener un menú, una receta sencilla o una alternativa para un antojo.
+- Calcular una estimación diaria de agua.
+- Guardar y revisar el progreso de peso.
+
+## Usuario principal
+
+FitFlow está dirigida a personas que quieren organizar un plan básico de fitness de manera sencilla, sin crear una cuenta ni utilizar herramientas complejas.
+
+## Funciones
+
+- Rutinas personalizadas con lógica predefinida.
+- Sugerencias de nutrición.
+- Recetas fáciles.
+- Alternativas para antojos.
+- Calculadora de agua.
+- Registro de progreso.
+- Persistencia con `localStorage`.
+
+## Tecnologías utilizadas
+
+- Next.js
+- App Router
+- TypeScript
+- Tailwind CSS
+- React
+- React state
+- `localStorage`
+- Git
+- GitHub
+- Vercel
+
+## Cómo ejecutar el proyecto
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+Inicia el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La aplicación normalmente se abre en [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Lógica algorítmica
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Rutina usa listas predefinidas y condiciones según el objetivo, nivel, intensidad y días disponibles.
+- Nutrición usa listas predefinidas y condiciones según la necesidad y la opción seleccionada.
+- Agua multiplica el peso por 35 para obtener mililitros y divide el resultado entre 1000 para mostrar litros.
+- Progreso resta el peso inicial al peso actual para determinar el cambio.
+- `localStorage` guarda el progreso dentro del navegador y permite recuperarlo después de recargar la aplicación.
 
-## Learn More
+## Flujo principal
 
-To learn more about Next.js, take a look at the following resources:
+1. El usuario abre FitFlow.
+2. Selecciona una pestaña.
+3. Completa las opciones.
+4. Presiona el botón correspondiente.
+5. La aplicación procesa los datos con lógica de TypeScript.
+6. Muestra el resultado.
+7. En Progreso, los datos permanecen guardados después de recargar.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Prompts principales utilizados
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Definir el propósito, alcance y plan de FitFlow.
+- Crear la interfaz principal y la navegación por pestañas.
+- Implementar las rutinas con listas y condiciones.
+- Implementar las opciones de nutrición con datos predefinidos.
+- Implementar la calculadora de agua.
+- Implementar el registro persistente de progreso.
+- Agregar personalización a Rutina y Nutrición.
+- Revisar, probar y documentar el proyecto final.
 
-## Deploy on Vercel
+## Limitaciones
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- No usa inteligencia artificial dentro de la aplicación.
+- No usa base de datos.
+- No tiene autenticación.
+- Las rutinas y sugerencias son ejemplos predefinidos.
+- No calcula calorías ni macronutrientes.
+- Las recomendaciones son educativas.
+- No sustituye asesoría médica, nutricional o de entrenamiento.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Posibles mejoras futuras
+
+- Más rutinas y ejercicios.
+- Más recetas.
+- Preferencias alimenticias.
+- Historial de peso.
+- Gráficas de progreso.
+- Edición de registros.
+- Más opciones de personalización.
+
+## Autoevaluación
+
+Aprendí a dividir una aplicación en milestones y utilicé variables, listas, objetos, funciones, estados, condiciones y cálculos para construir cada sección. También aprendí a usar `localStorage` y a registrar el proceso con GitHub. Utilicé inteligencia artificial como copiloto, pero revisé y probé cada funcionalidad para comprender el resultado. Una mejora futura sería ampliar las opciones sin complicar demasiado la aplicación.
+
+## Enlaces
+
+- Repositorio de GitHub: pendiente
+- Aplicación en Vercel: pendiente
