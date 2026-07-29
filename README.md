@@ -107,5 +107,5 @@ Aprendí a dividir una aplicación en milestones y utilicé variables, listas, o
 
 ## Enlaces
 
-- Repositorio de GitHub: pendiente
-- Aplicación en Vercel: pendiente
+- Repositorio de GitHub: [nicopliego/assignment-3-fitflow](https://github.com/nicopliego/assignment-3-fitflow)
+- Aplicación en Vercel: [assignment-3-fitflow.vercel.app](https://assignment-3-fitflow.vercel.app/)
